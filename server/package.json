@@ -1,0 +1,21 @@
+{
+  "name": "websockets",
+  "version": "1.0.0",
+  "description": "chat in real time",
+  "homepage": "https://github.com/DF2024/chat-websockets#readme",
+  "bugs": {
+    "url": "https://github.com/DF2024/chat-websockets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DF2024/chat-websockets.git"
+  },
+  "license": "MIT",
+  "author": "dandefensor",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch"
+  }
+}
