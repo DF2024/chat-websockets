@@ -1,0 +1,22 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  room      String   // ID de la sala
+  author    String   // Nombre del usuario
+  message   String   // Contenido del mensaje
+  time      String   // La hora que mandas desde el front (ej: "14:30")
+  createdAt DateTime @default(now()) // Fecha real de registro en DB
+}
